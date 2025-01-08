@@ -1,20 +1,20 @@
-import Fastify from 'fastify'
-import routesRegister from './routesRegister'
+import Fastify from "fastify";
+import routesRegister from "./routesRegister";
 
 export default () => {
-	const server = Fastify()
+	const server = Fastify();
 
-	server.register(routesRegister)
+	server.register(routesRegister);
 
 	server.listen(
-		{ host: process.env.HOST ?? '0.0.0.0', port: process.env.PORT ?? 8080 },
+		{ host: process.env.HOST ?? "0.0.0.0", port: process.env.PORT ?? 8080 },
 		(err, address) => {
 			if (err) {
-				console.error(err)
-				process.exit(1)
+				console.error(err);
+				process.exit(1);
 			}
 
-			console.info(`Web server successfully listening on ${address}`)
+			console.info(`Web server successfully listening on ${address}`);
 		},
-	)
-}
+	);
+};

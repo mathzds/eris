@@ -1,10 +1,13 @@
-import CacheModel from './models/cache/Cache.model'
-import SettingsModel from './models/settings/Settings.model'
+import { DataSource } from "typeorm";
 
-const database = {
-	cache: CacheModel,
-	settings: SettingsModel,
-}
-global.database = database
+export const database = new DataSource({
+	type: "sqlite",
+	database: "./database.sqlite",
+	synchronize: true,
+	logging: false,
+	entities: [],
+});
 
-export default database
+global.database = database;
+
+export default database;

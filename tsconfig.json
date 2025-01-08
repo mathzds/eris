@@ -1,28 +1,29 @@
 {
-  "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
-    "baseUrl": ".",
-    "outDir": "dist",
-    "target": "ESNext",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "resolveJsonModule": true,
-    "importHelpers": true,
-    "experimentalDecorators": true,
-    "paths": {
-      "@/*": ["./src/*.ts"],
-      "@libs/*": ["./src/libs/*"],
-      "@database/*": ["./src/database/*"],
-      "#app": ["./src/types/app.d.ts"],
-      "#app/boostrap": ["./src/app/bootstrap.ts"],
-      "#fastify": ["./src/types/fastify.d.ts"],
-      "#fastify/bootstrap": ["./src/server/bootstrap.ts"]
-    }
-  },
-  "include": ["./src/**/*"],
-  "exclude": ["./node_modules/**/*", "./dist/**/*"]
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM"],
+		"baseUrl": ".",
+		"outDir": "dist",
+		"target": "ESNext",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"esModuleInterop": true,
+		"strict": true,
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"resolveJsonModule": true,
+		"importHelpers": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"paths": {
+			"@/*": ["./src/*.ts"],
+			"@libs/*": ["./src/libs/*"],
+			"@database/*": ["./src/database/*"],
+			"#app": ["./src/types/app.d.ts"],
+			"#app/boostrap": ["./src/app/bootstrap.ts"],
+			"#fastify": ["./src/types/fastify.d.ts"],
+			"#fastify/bootstrap": ["./src/server/bootstrap.ts"]
+		}
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["./node_modules/**/*", "./dist/**/*"]
 }

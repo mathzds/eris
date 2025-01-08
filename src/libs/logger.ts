@@ -1,3 +1,3 @@
-import { Loggings } from 'loggings'
+import { Loggings } from "loggings";
 
-Loggings.useConsole(new Loggings('DiscordBot', 'gold'))
+Loggings.useConsole(new Loggings("bot", "brown"));

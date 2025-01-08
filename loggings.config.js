@@ -1,4 +1,4 @@
 /** @type {import("loggings").LoggingsOptionalConfig} */
 export default {
-	register_dir: 'logs/',
-}
+	register_dir: "logs/",
+};

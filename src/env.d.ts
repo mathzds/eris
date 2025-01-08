@@ -1,12 +1,12 @@
 declare namespace NodeJS {
 	interface ProcessEnv {
-		NODE_ENV?: string
-		HOST?: string
-		PORT?: number
+		NODE_ENV?: string;
+		HOST?: string;
+		PORT?: number;
 
-		DISCORD_TOKEN: string
-		WEBHOOK_ERROR_URL?: string
-		WEBHOOK_ERROR_USERNAME: string
-		WEBHOOK_ERROR_AVATAR: string
+		DISCORD_TOKEN: string;
+		WEBHOOK_ERROR_URL?: string;
+		WEBHOOK_ERROR_USERNAME: string;
+		WEBHOOK_ERROR_AVATAR: string;
 	}
 }

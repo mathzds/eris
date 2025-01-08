@@ -1,8 +1,8 @@
-import type database from '@database/index'
-import 'fastify'
+import type database from "@database/index";
+import "fastify";
 
-declare module 'fastify' {
+declare module "fastify" {
 	interface FastifyInstance {
-		db: typeof database
+		db: typeof database;
 	}
 }
